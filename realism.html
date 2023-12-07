@@ -1,0 +1,1357 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mission-3</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        h3 {
+            color: white;
+            font-family: monospace;
+            font-size: 40px;
+        }
+
+        .footer {
+            position: relative;
+            width: 100%;
+            background: #3586ff;
+            min-height: 100px;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+            .footer p {
+                color: #fff;
+                margin: 15px 0 10px 0;
+                font-size: 17px;
+                font-weight: 300;
+            }
+
+        .wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("https://i.ibb.co/wQZVxxk/wave.png");
+            background-size: 1000px 100px;
+        }
+
+            .wave#wave1 {
+                z-index: 1000;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWaves 4s linear infinite;
+            }
+
+            .wave#wave2 {
+                z-index: 999;
+                opacity: 0.5;
+                bottom: 10px;
+                animation: animate 4s linear infinite !important;
+            }
+
+            .wave#wave3 {
+                z-index: 1000;
+                opacity: 0.2;
+                bottom: 15px;
+                animation: animateWaves 3s linear infinite;
+            }
+
+            .wave#wave4 {
+                z-index: 999;
+                opacity: 0.7;
+                bottom: 20px;
+                animation: animate 3s linear infinite;
+            }
+
+        @media screen and (min-width:992px) {
+            .nav-item {
+                line-height: 80px;
+            }
+        }
+
+        @keyframes animateWaves {
+            0% {
+                background-position-x: 1000px;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: -1000px;
+            }
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--HEADER-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-primary" id="headerNav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="logoo.png" height="80" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">asd</span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link mx-2" href="#"></a>
+                    </li>
+
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link mx-2" href="#">
+                            <img src="logoo.png" height="80" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link mx-2" href="#"></a>
+                    </li>
+
+                    <li class="nav-item dropend">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Art Movements
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="realism.html">Realism</a></li>
+                            <li><a class="dropdown-item" href="surrealism.html">Surrealism</a></li>
+                            <li><a class="dropdown-item" href="impressionism.html">Impressionism</a></li>
+                            <li><a class="dropdown-item" href="cubic.html">Cubic</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <!--HEADLINE-->
+
+    <div class="blocks-preview-content-holder shrinker-content">
+        <marquee behavior=alternate><img src="realism-p/realism-head.png" alt="Alternate Text" height="55px" /></marquee>
+    </div>
+
+    <br />
+
+    <div class="container text-center">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-2.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal1">
+
+                        <div class="card-body">
+                            <h5 class="card-title">La Nymphe surprise</h5>
+                            <p class="card-text">Édouard Manet (1861)</p>
+                            <!--<a href="#" class="btn btn-primary">🔎</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-3.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal2">
+
+                        <div class="card-body">
+                            <h5 class="card-title">The Potato Eaters</h5>
+                            <p class="card-text"> Vincent van Gogh (1885)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-4.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal3">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Nighthawks</h5>
+                            <p class="card-text">Edward Hopper (1942)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-5.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal4">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Gleaners</h5>
+                            <p class="card-text">Jean-François Millet (1857)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-6.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal5">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Luncheon on the Grass</h5>
+                            <p class="card-text">Édouard Manet (1863)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-7.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal7">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Barge Haulers on the Volga</h5>
+                            <p class="card-text">İlya Repin (1870 - 1873)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-8.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal8">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Olympia</h5>
+                            <p class="card-text">Édouard Manet (1863)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-9.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal9">
+
+                        <div class="card-body">
+                            <h5 class="card-title">The Floor Planers</h5>
+                            <p class="card-text">Gustave Caillebotte (1875)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-10.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal10">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Early Sunday Morning</h5>
+                            <p class="card-text">Edward Hopper (1930)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-11.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal11">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Boyarina Morozova</h5>
+                            <p class="card-text">Vasili Surikov (1887)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-12.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal12">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Breezing Up (A Fair Wind)</h5>
+                            <p class="card-text">Winslow Homer (1873-1876)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-13.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal13">
+                        <div class="card-body">
+                            <h5 class="card-title">Young Ladies of the Village</h5>
+                            <p class="card-text">Gustave Courbet (1851–1852)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-14.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal14">
+                        <div class="card-body">
+                            <h5 class="card-title">Ploughing in Nevers</h5>
+                            <p class="card-text">Rosa Bonheur (1849)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-15.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal15">
+                        <div class="card-body">
+                            <h5 class="card-title">Boys Playing on the Shore</h5>
+                            <p class="card-text">Albert Edelfelt (1884)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-16.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal16">
+                        <div class="card-body">
+                            <h5 class="card-title">Moscow patio</h5>
+                            <p class="card-text">Vasily Polenov (1878)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-17.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal17">
+                        <div class="card-body">
+                            <h5 class="card-title">Woman with a Parrot</h5>
+                            <p class="card-text">Gustave Courbet (1866)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-18.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal18">
+                        <div class="card-body">
+                            <h5 class="card-title">The Fog Warning</h5>
+                            <p class="card-text">Winslow Homer (1885)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-19.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal19">
+                        <div class="card-body">
+                            <h5 class="card-title">Ceremonial Sitting of the State Council</h5>
+                            <p class="card-text">İlya Repin (1903)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-20.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal20">
+                        <div class="card-body">
+                            <h5 class="card-title">Taking a Snow Town</h5>
+                            <p class="card-text">Vasili Surikov (1891)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-21.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal21">
+                        <div class="card-body">
+                            <h5 class="card-title">The Drowned Fisherman</h5>
+                            <p class="card-text">Michael Ancher (1896)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-22.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal22">
+                        <div class="card-body">
+                            <h5 class="card-title">The Herring Net</h5>
+                            <p class="card-text">Winslow Homer (1885)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-23.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal23">
+                        <div class="card-body">
+                            <h5 class="card-title">Weaning the Calves</h5>
+                            <p class="card-text">Rosa Bonheur (1879)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-24.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal24">
+                        <div class="card-body">
+                            <h5 class="card-title">The Elder Sister</h5>
+                            <p class="card-text">William-Adolphe Bouguereau (1869)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-25.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal25">
+                        <div class="card-body">
+                            <h5 class="card-title">A Matador</h5>
+                            <p class="card-text">Édouard Manet (1866–1867)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-26.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal26">
+                        <div class="card-body">
+                            <h5 class="card-title">Rye</h5>
+                            <p class="card-text">İvan Şişkin (1878)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-27.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal27">
+                        <div class="card-body">
+                            <h5 class="card-title">Hay Making</h5>
+                            <p class="card-text">Jules Bastien-Lepage (1877)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-28.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal28">
+                        <div class="card-body">
+                            <h5 class="card-title">The Luxembourg Gardens, Paris</h5>
+                            <p class="card-text">Albert Edelfelt (1887)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-29.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal29">
+                        <div class="card-body">
+                            <h5 class="card-title">The Life Line</h5>
+                            <p class="card-text">Winslow Homer (1884)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-30.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal30">
+                        <div class="card-body">
+                            <h5 class="card-title">Queen Bianca</h5>
+                            <p class="card-text">Albert Edelfelt (1877)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-31.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal31">
+                        <div class="card-body">
+                            <h5 class="card-title">Sheep by the Sea</h5>
+                            <p class="card-text">Rosa Bonheur (1865)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-32.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal32">
+                        <div class="card-body">
+                            <h5 class="card-title">A Limier Briquet Hound</h5>
+                            <p class="card-text">Rosa Bonheur (1856)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-33.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal33">
+                        <div class="card-body">
+                            <h5 class="card-title">The Nut Gatherers</h5>
+                            <p class="card-text">William-Adolphe Bouguereau (1882)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-34.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal34">
+                        <div class="card-body">
+                            <h5 class="card-title">Haystacks: Autumn</h5>
+                            <p class="card-text">Jean-François Millet (1874)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-35.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal35">
+                        <div class="card-body">
+                            <h5 class="card-title">October</h5>
+                            <p class="card-text">Jules Bastien-Lepage (1878)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-36.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal36">
+                        <div class="card-body">
+                            <h5 class="card-title">A Stroll on the Beach</h5>
+                            <p class="card-text">Michael Ancher (1896)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-37.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal37">
+                        <div class="card-body">
+                            <h5 class="card-title">Portrait of Princess Olga Orlova</h5>
+                            <p class="card-text">Valentin Serov (1911)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-38.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal38">
+                        <div class="card-body">
+                            <h5 class="card-title">Mending the Nets</h5>
+                            <p class="card-text">Winslow Homer (1882)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-39.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal39">
+                        <div class="card-body">
+                            <h5 class="card-title">A Studio at Les Batignolles</h5>
+                            <p class="card-text">Henri Fantin-Latour (1870)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-40.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal40">
+                        <div class="card-body">
+                            <h5 class="card-title">The Biglin Brothers Racing</h5>
+                            <p class="card-text">Thomas Eakins (1872)</p>
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="realism-p/realism-41.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal41">
+                        <div class="card-body">
+                            <h5 class="card-title">Aiding a Comrade</h5>
+                            <p class="card-text">Frederic Remington (1889-1890)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <p>&copy;2023 Serkan Bayraktar | All Rights Reserved</p>
+    </footer>
+
+    <!--MODAL-->
+
+    <div class="modal fade" id="modal1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">La Nymphe surprise</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-2.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#exampleModalToggle2" data-toggle="modal">Open second modal</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Potato Eaters</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-3.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">Nighthawks</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-4.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Gleaners</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-5.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Luncheon on the Grass</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-6.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Barge Haulers on the Volga</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-7.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Olympia</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-8.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Floor Planers</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-9.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal10" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Early Sunday Morning</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-10.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Boyarina Morozova</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-11.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal12" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Breezing Up (A Fair Wind)</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-12.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal13" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Young Ladies of the Village</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-13.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal14" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ploughing in Nevers</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-14.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal15" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Boys Playing on the Shore</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-15.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal16" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Moscow patio</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-16.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal17" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Woman with a Parrot</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-17.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal18" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Fog Warning</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-18.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal19" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ceremonial Sitting of the State Council</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-19.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal20" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Taking a Snow Town</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-20.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal21" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Drowned Fisherman</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-21.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal22" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Herring Net</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-22.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal23" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Weaning the Calves</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-23.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal24" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Elder Sister</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-24.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal25" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">A Matador</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-25.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal26" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Rye</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-26.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal27" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Hay Making</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-27.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal28" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Luxembourg Gardens, Paris</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-28.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal29" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Life Line</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-29.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal30" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Queen Bianca</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-30.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal31" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Sheep by the Sea</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-31.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal32" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">A Limier Briquet Hound</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-32.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal33" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Nut Gatherers</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-33.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal34" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Haystacks: Autumn</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-34.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal35" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">October</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-35.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal36" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">A Stroll on the Beach</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-36.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal37" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Portrait of Princess Olga Orlova</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-37.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal38" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Mending the Nets</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-38.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal39" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">A Studio at Les Batignolles</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-39.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal40" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Biglin Brothers Racing</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-40.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal41" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Aiding a Comrade</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="realism-p/realism-41.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+                <!--<div class="modal-footer">
+                    <button class="btn btn-primary" data-target="#modal1" data-toggle="modal">Back to first</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
+
+</body>
+</html>

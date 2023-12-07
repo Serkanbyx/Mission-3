@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mission-3</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        h3 {
+            color: white;
+            font-family: monospace;
+            font-size: 40px;
+        }
+
+        .footer {
+            position: relative;
+            width: 100%;
+            background: #3586ff;
+            min-height: 100px;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .footer p {
+            color: #fff;
+            margin: 15px 0 10px 0;
+            font-size: 17px;
+            font-weight: 300;
+        }
+
+        .wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("https://i.ibb.co/wQZVxxk/wave.png");
+            background-size: 1000px 100px;
+        }
+
+            .wave#wave1 {
+                z-index: 1000;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWaves 4s linear infinite;
+            }
+
+            .wave#wave2 {
+                z-index: 999;
+                opacity: 0.5;
+                bottom: 10px;
+                animation: animate 4s linear infinite !important;
+            }
+
+            .wave#wave3 {
+                z-index: 1000;
+                opacity: 0.2;
+                bottom: 15px;
+                animation: animateWaves 3s linear infinite;
+            }
+
+            .wave#wave4 {
+                z-index: 999;
+                opacity: 0.7;
+                bottom: 20px;
+                animation: animate 3s linear infinite;
+            }
+
+        @media screen and (min-width:992px) {
+            .nav-item {
+                line-height: 80px;
+            }
+        }
+
+        @keyframes animateWaves {
+            0% {
+                background-position-x: 1000px;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: -1000px;
+            }
+        }
+            
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-primary" id="headerNav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block d-lg-none btn" href="logo.mp4" type="button" data-bs-toggle="modal" data-bs-target="#logo">
+                <img src="logoo.png" height="80" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">asd</span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link mx-2" href="#"></a>
+                    </li>
+
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link mx-2" href="#">
+                            <img src="logoo.png" height="80" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link mx-2" href="#"></a>
+                    </li>
+
+                    <li class="nav-item dropend">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Art Movements
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="realism.html">Realism</a></li>
+                            <li><a class="dropdown-item" href="surrealism.html">Surrealism</a></li>
+                            <li><a class="dropdown-item" href="impressionism.html">Impressionism</a></li>
+                            <li><a class="dropdown-item" href="cubic.html">Cubic</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <!--noel baba-->
+
+    <div style="height: 1px">
+        <marquee direction=right><a href="noel.mp4" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#noel"><img src="noel.jpg" alt="Alternate Text" style="height:30px" /></a></marquee>
+    </div>
+
+    <br />
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 m-4">
+        <div class="col">
+            <div class="card">
+                <img src="realism-p/realism-1.jpeg" class="card-img-top" alt="realism paint" style="height:430px">
+                <div class="card-body">
+                    <h3><span data-value="REALISM" id="1" class="mt-1">REALISM</span></h3>
+                    <p class="card-text">Realism, an art movement that emerged in the 19th century, responded to the industrial developments and the distinct stratification of societal classes during this era. The shift from the realm of emotional experiences to the world of realities was propelled by these advancements. In reaction to the idealistic approach to subjects prevalent in Romanticism, artists began creating works in a Realist style. Realists aimed to portray ordinary and realistic themes, distancing themselves from theatrical drama and classical forms in art. The movement was shaped by a desire to represent life as it truly was, reflecting the societal changes and challenges of the time.</p>
+                    <a class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal-1">More information</a>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+                        <button onclick="window.location.href = 'realism.html';" class="btn btn-primary me-md-2" type="button">Go to the exhibition</button>
+                        <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal" data-bs-target="#realism-video">Virtual exhibition</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="surrealism-p/surrealism-1.jpg" class="card-img-top" alt="surrealist paint" style="height:430px">
+                <div class="card-body">
+                    <h3><span data-value="SURREALISM" id="2" class="mt-1">SURREALISM</span></h3>
+                    <p class="card-text">Surrealism strives to revolutionize human experience by harmonizing a rational outlook on life with a celebration of the potency of the unconscious and dreams. Artists within the movement seek enchantment and peculiar beauty in the unanticipated, the uncanny, and the unconventional aspects of existence. Surrealism ventures beyond conventional boundaries, uncovering magic in the overlooked and embracing the extraordinary. This artistic movement encourages a transformative perspective, challenging perceptions and inviting viewers to explore the realms of the unexpected and fantastical, where the ordinary transcends into the extraordinary.</p>
+                    <a href="magical-realism.html" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal-2">More information</a>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button onclick="window.location.href = 'surrealism.html';" class="btn btn-primary me-md-2" type="button">Go to the exhibition</button>
+                        <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal" data-bs-target="#surrealism-video">Virtual exhibition</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="impressionism-p/impressionism-1.jpg" class="card-img-top" alt="impressionist painting" style="height:430px">
+                <div class="card-body">
+                    <h3><span data-value="IMPRESSIONISM" id="3" class="mt-1">IMPRESSIONISM</span></h3>
+                    <p class="card-text">Impressionism, an art movement that emerged in the 19th century, prioritizes the concepts of light, color, and the moment. It is grounded in the idea that the appearance of natural scenes is in constant flux, asserting that a particular view at any given moment will never be replicated exactly the same way again. Impressionist artists sought to capture the fleeting essence of a scene, emphasizing the transient effects of light and atmosphere. Departing from traditional realism, they embraced visible brushstrokes and opted for unconventional compositions. The movement revolutionized artistic expression by challenging established norms and fostering a dynamic interpretation of reality through the lens of individual perception.</p>
+                    <a href="magical-reality.html" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal-3">More information</a>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button onclick="window.location.href = 'impressionism.html';" class="btn btn-primary me-md-2" type="button">Go to the exhibition</button>
+                        <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal" data-bs-target="#impressionism-video">Virtual exhibition</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="cubic-p/cubic-1.jpg" class="card-img-top" alt="cubic paint" style="height:430px">
+                <div class="card-body">
+                    <h3><span data-value="CUBIC" id="4" class="mt-1">CUBIC</span></h3>
+                    <p class="card-text">Cubism, a groundbreaking French art movement of the early 20th century, signaled a radical departure from representational traditions. Spearheaded by Pablo Picasso and Georges Braque, Cubism aimed to depict subjects through emphasized geometric shapes, revealing them simultaneously from various angles beyond surface constraints. The movement disrupted established perspectives and realities, introducing fragmented forms and multiple viewpoints. Artists delved into the deconstruction and reassembly of objects, crafting compositions that challenged viewers to navigate intricate layers of perception. Cubism played a pivotal role in reshaping the artistic landscape, influencing diverse forms and paving the way for subsequent avant-garde movements.</p>
+                    <a href="magical-reality.html" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal-4">More information</a>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button onclick="window.location.href = 'cubic.html';" class="btn btn-primary me-md-2" type="button">Go to the exhibition</button>
+                        <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal" data-bs-target="#cubic-video">Virtual exhibition</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <p>&copy;2023 Serkan Bayraktar | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Realism</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Realism (art movement)</h4>
+                    <p class="card-text"><b>Realism</b> was an artistic movement that emerged in France in the 1840s, around the 1848 Revolution.[1] Realists rejected Romanticism, which had dominated French literature and art since the early 19th century. Realism revolted against the exotic subject matter and the exaggerated emotionalism and drama of the Romantic movement. Instead, it sought to portray real and typical contemporary people and situations with truth and accuracy, and not avoiding unpleasant or sordid aspects of life. The movement aimed to focus on unidealized subjects and events that were previously rejected in art work. Realist works depicted people of all classes in situations that arise in ordinary life, and often reflected the changes brought by the Industrial and Commercial Revolutions. Realism was primarily concerned with how things appeared to the eye, rather than containing ideal representations of the world.[citation needed] The popularity of such "realistic" works grew with the introduction of photography—a new visual source that created a desire for people to produce representations which look objectively real.</p>
+                    <p>The Realists depicted everyday subjects and situations in contemporary settings, and attempted to depict individuals of all social classes in a similar manner. Gloomy earth toned palettes were used to ignore beauty and idealization that was typically found in art. This movement sparked controversy because it purposefully criticized social values and the upper classes, as well as examining the new values that came along with the industrial revolution. Realism is widely regarded as the beginning of the modern art movement due to the push to incorporate modern life and art together.[2] Classical idealism and Romantic emotionalism and drama were avoided equally, and often sordid or untidy elements of subjects were not smoothed over or omitted. Social realism emphasizes the depiction of the working class, and treating them with the same seriousness as other classes in art, but realism, as the avoidance of artificiality, in the treatment of human relations and emotions was also an aim of Realism. Treatments of subjects in a heroic or sentimental manner were equally rejected.</p>
+                    <p>Realism as an art movement was led by Gustave Courbet in France. It spread across Europe and was influential for the rest of the century and beyond, but as it became adopted into the mainstream of painting it becomes less common and useful as a term to define artistic style. After the arrival of Impressionism and later movements which downgraded the importance of precise illusionistic brushwork, it often came to refer simply to the use of a more traditional and tighter painting style. It has been used for a number of later movements and trends in art, some involving careful illusionistic representation, such as Photorealism, and others the depiction of "realist" subject matter in a social sense, or attempts at both.</p>
+                    <h4>Beginnings in France</h4>
+                    <p>The Realist movement began in the mid-19th century as a reaction to Romanticism and History painting. In favor of depictions of 'real' life, the Realist painters used common laborers, and ordinary people in ordinary surroundings engaged in real activities as subjects for their works. The chief exponents of Realism were Gustave Courbet, Jean-François Millet, Honoré Daumier, and Jean-Baptiste-Camille Corot.[4][5][6] Jules Bastien-Lepage is closely associated with the beginning of Naturalism, an artistic style that emerged from the later phase of the Realist movement and heralded the arrival of Impressionism.[7]</p>
+                    <p>Realists used unprettified detail depicting the existence of ordinary contemporary life, coinciding in the contemporaneous naturalist literature of Émile Zola, Honoré de Balzac, and Gustave Flaubert.</p>
+                    <p>Courbet was the leading proponent of Realism and he challenged the popular history painting that was favored at the state-sponsored art academy. His groundbreaking paintings A Burial at Ornans and The Stonebreakers depicted ordinary people from his native region. Both paintings were done on huge canvases that would typically be used for history paintings.[8] Although Courbet's early works emulated the sophisticated manner of Old Masters such as Rembrandt and Titian, after 1848 he adopted a boldly inelegant style inspired by popular prints, shop signs, and other work of folk artisans.[9] In The Stonebreakers, his first painting to create a controversy, Courbet eschewed the pastoral tradition of representing human subjects in harmony with nature. Rather, he depicted two men juxtaposed against a charmless, stony roadside. The concealment of their faces emphasizes the dehumanizing nature of their monotonous, repetitive labor.</p>
+                    <h4>Beyond France</h4>
+                    <p>The French Realist movement had stylistic and ideological equivalents in all other Western countries, developing somewhat later. The Realist movement in France was characterized by a spirit of rebellion against powerful official support for history painting. In countries where institutional support of history painting was less dominant, the transition from existing traditions of genre painting to Realism presented no such schism.[9] An important Realist movement beyond France was the Peredvizhniki or Wanderers group in Russia who formed in the 1860s and organized exhibitions from 1871 included many realists such as genre artist Vasily Perov, landscape artists Ivan Shishkin, Alexei Savrasov, and Arkhip Kuindzhi, portraitist Ivan Kramskoy, war artist Vasily Vereshchagin, historical artist Vasily Surikov and, especially, Ilya Repin, who is considered by many to be the most renowned Russian artist of the 19th century.</p>
+                    <p>Courbet's influence was felt most strongly in Germany, where prominent realists included Adolph Menzel, Wilhelm Leibl, Wilhelm Trübner, and Max Liebermann. Leibl and several other young German painters met Courbet in 1869 when he visited Munich to exhibit his works and demonstrate his manner of painting from nature.[12] In Italy the artists of the Macchiaioli group painted Realist scenes of rural and urban life. The Hague School were Realists in the Netherlands whose style and subject matter strongly influenced the early works of Vincent van Gogh.[9] In Britain artists such as the American James Abbott McNeill Whistler, as well as English artists Ford Madox Brown, Hubert von Herkomer and Luke Fildes had great success with realist paintings dealing with social issues and depictions of the "real" world.</p>
+                    <p>In the United States, Winslow Homer and Thomas Eakins were important Realists and forerunners of the Ashcan School, an early-20th-century art movement largely based in New York City. The Ashcan School included such artists as George Bellows and Robert Henri, and helped to define American realism in its tendency to depict the daily life of poorer members of society.</p>
+                    <p>Later on in America, the term realism took on various new definitions and adaptations once the movement hit the U.S. Surrealism and magical realism developed out of the French realist movement in the 1930s, and in the 1950s new realism developed. This sub-movement considered art to exist as a thing in itself opposed to representations of the real world. In modern-day America, realism art is generally regarded as anything that does not fall into abstract art, therefore including mostly art that depicts realities.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="window.location.href = 'realism.html';" type="button" class="btn btn-primary">Go to exhibition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Surrealism</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Surrealism</h4>
+                    <p><b>Surrealism</b> is a cultural movement that developed in Europe in the aftermath of World War I in which artists depicted unnerving, illogical scenes and developed techniques to allow the unconscious mind to express itself.[1] Its aim was, according to leader André Breton, to "resolve the previously contradictory conditions of dream and reality into an absolute reality, a super-reality", or surreality.[2][3][4] It produced works of painting, writing, theatre, filmmaking, photography, and other media.</p>
+                    <p>Works of Surrealism feature the element of surprise, unexpected juxtapositions and non sequitur. However, many Surrealist artists and writers regard their work as an expression of the philosophical movement first and foremost (for instance, of the "pure psychic automatism" Breton speaks of in the first Surrealist Manifesto), with the works themselves being secondary, i.e., artifacts of surrealist experimentation.[5] Leader Breton was explicit in his assertion that Surrealism was, above all, a revolutionary movement. At the time, the movement was associated with political causes such as communism and anarchism. It was influenced by the Dada movement of the 1910s.[6]</p>
+                    <p>The term "Surrealism" originated with Guillaume Apollinaire in 1917.[7][8] However, the Surrealist movement was not officially established until after October 1924, when the Surrealist Manifesto published by French poet and critic André Breton succeeded in claiming the term for his group over a rival faction led by Yvan Goll, who had published his own surrealist manifesto two weeks prior.[9] The most important center of the movement was Paris, France. From the 1920s onward, the movement spread around the globe, impacting the visual arts, literature, film, and music of many countries and languages, as well as political thought and practice, philosophy, and social theory.</p>
+                    <h4>Founding of the movement</h4>
+                    <p>The word surrealism was first coined in March 1917 by Guillaume Apollinaire.[10] He wrote in a letter to Paul Dermée: "All things considered, I think in fact it is better to adopt surrealism than supernaturalism, which I first used" [Tout bien examiné, je crois en effet qu'il vaut mieux adopter surréalisme que surnaturalisme que j'avais d'abord employé].</p>
+                    <p>Apollinaire used the term in his program notes for Sergei Diaghilev's Ballets Russes, Parade, which premiered 18 May 1917. Parade had a one-act scenario by Jean Cocteau and was performed with music by Erik Satie. Cocteau described the ballet as "realistic". Apollinaire went further, describing Parade as "surrealistic":</p>
+                    <ul>
+                        <li>This new alliance—I say new, because until now scenery and costumes were linked only by factitious bonds—has given rise, in Parade, to a kind of surrealism, which I consider to be the point of departure for a whole series of manifestations of the New Spirit that is making itself felt today and that will certainly appeal to our best minds. We may expect it to bring about profound changes in our arts and manners through universal joyfulness, for it is only natural, after all, that they keep pace with scientific and industrial progress. (Apollinaire, 1917)</li>
+                    </ul>
+                    <p>The term was taken up again by Apollinaire, both as subtitle and in the preface to his play Les Mamelles de Tirésias: Drame surréaliste,[14] which was written in 1903 and first performed in 1917.</p>
+                    <p>World War I scattered the writers and artists who had been based in Paris, and in the interim, many became involved with Dada, believing that excessive rational thought and bourgeois values had brought the conflict of the war upon the world. The Dadaists protested with anti-art gatherings, performances, writings and art works. After the war, when they returned to Paris, the Dada activities continued.</p>
+                    <p>During the war, André Breton, who had trained in medicine and psychiatry, served in a neurological hospital where he used Sigmund Freud's psychoanalytic methods with soldiers suffering from shell-shock. Meeting the young writer Jacques Vaché, Breton felt that Vaché was the spiritual son of writer and pataphysics founder Alfred Jarry. He admired the young writer's anti-social attitude and disdain for established artistic tradition. Later Breton wrote, "In literature, I was successively taken with Rimbaud, with Jarry, with Apollinaire, with Nouveau, with Lautréamont, but it is Jacques Vaché to whom I owe the most."</p>
+                    <p>Back in Paris, Breton joined in Dada activities and started the literary journal Littérature along with Louis Aragon and Philippe Soupault. They began experimenting with automatic writing—spontaneously writing without censoring their thoughts—and published the writings, as well as accounts of dreams, in the magazine. Breton and Soupault continued writing evolving their techniques of automatism and published The Magnetic Fields (1920).</p>
+                    <h4>Surrealist Manifestos</h4>
+                    <p>Leading up to 1924, two rival surrealist groups had formed. Each group claimed to be successors of a revolution launched by Apollinaire. One group, led by Yvan Goll, consisted of Pierre Albert-Birot, Paul Dermée, Céline Arnauld, Francis Picabia, Tristan Tzara, Giuseppe Ungaretti, Pierre Reverdy, Marcel Arland, Joseph Delteil, Jean Painlevé and Robert Delaunay, among others.</p>
+                    <p>The other group, led by Breton, included Aragon, Desnos, Éluard, Baron, Crevel, Malkine, Jacques-André Boiffard and Jean Carrive, among others.</p>
+                    <p>Yvan Goll published the Manifeste du surréalisme, 1 October 1924, in his first and only issue of Surréalisme[23] two weeks prior to the release of Breton's Manifeste du surréalisme, published by Éditions du Sagittaire, 15 October 1924.</p>
+                    <p>Breton's 1924 Surrealist Manifesto defines the purposes of Surrealism. He included citations of the influences on Surrealism, examples of Surrealist works, and discussion of Surrealist automatism. He provided the following definitions:</p>
+                    <ul>
+                        <li><b>Dictionary:</b> Surrealism, n. Pure psychic automatism, by which one proposes to express, either verbally, in writing, or by any other manner, the real functioning of thought. Dictation of thought in the absence of all control exercised by reason, outside of all aesthetic and moral preoccupation.</li>
+                        <li><b>Encyclopedia:</b> Surrealism. Philosophy. Surrealism is based on the belief in the superior reality of certain forms of previously neglected associations, in the omnipotence of dream, in the disinterested play of thought. It tends to ruin once and for all other psychic mechanisms and to substitute itself for them in solving all the principal problems of life.[4]</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="window.location.href = 'magical-realism.html';" type="button" class="btn btn-primary">Go to exhibition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Impressionism</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Impressionism</h4>
+                    <p>Impressionism was a 19th-century art movement characterized by relatively small, thin, yet visible brush strokes, open composition, emphasis on accurate depiction of light in its changing qualities (often accentuating the effects of the passage of time), ordinary subject matter, unusual visual angles, and inclusion of movement as a crucial element of human perception and experience. Impressionism originated with a group of Paris-based artists whose independent exhibitions brought them to prominence during the 1870s and 1880s.</p>
+                    <p>The Impressionists faced harsh opposition from the conventional art community in France. The name of the style derives from the title of a Claude Monet work, Impression, soleil levant (Impression, Sunrise), which provoked the critic Louis Leroy to coin the term in a satirical 1874 review published in the Parisian newspaper Le Charivari. The development of Impressionism in the visual arts was soon followed by analogous styles in other media that became known as impressionist music and impressionist literature.</p>
+                    <h4>Overview</h4>
+                    <p>Radicals in their time, early Impressionists violated the rules of academic painting. They constructed their pictures from freely brushed colours that took precedence over lines and contours, following the example of painters such as Eugène Delacroix and J. M. W. Turner. They also painted realistic scenes of modern life, and often painted outdoors. Previously, still lifes and portraits as well as landscapes were usually painted in a studio.[1] The Impressionists found that they could capture the momentary and transient effects of sunlight by painting outdoors or en plein air. They portrayed overall visual effects instead of details, and used short "broken" brush strokes of mixed and pure unmixed colour—not blended smoothly or shaded, as was customary—to achieve an effect of intense colour vibration.</p>
+                    <p>Impressionism emerged in France at the same time that a number of other painters, including the Italian artists known as the Macchiaioli, and Winslow Homer in the United States, were also exploring plein-air painting. The Impressionists, however, developed new techniques specific to the style. Encompassing what its adherents argued was a different way of seeing, it is an art of immediacy and movement, of candid poses and compositions, of the play of light expressed in a bright and varied use of colour.</p>
+                    <p>The public, at first hostile, gradually came to believe that the Impressionists had captured a fresh and original vision, even if the art critics and art establishment disapproved of the new style. By recreating the sensation in the eye that views the subject, rather than delineating the details of the subject, and by creating a welter of techniques and forms, Impressionism is a precursor of various painting styles, including Neo-Impressionism, Post-Impressionism, Fauvism, and Cubism.</p>
+                    <h4>Beginnings</h4>
+                    <p>In the middle of the 19th century—a time of change, as Emperor Napoleon III rebuilt Paris and waged war—the Académie des Beaux-Arts dominated French art. The Académie was the preserver of traditional French painting standards of content and style. Historical subjects, religious themes, and portraits were valued; landscape and still life were not. The Académie preferred carefully finished images that looked realistic when examined closely. Paintings in this style were made up of precise brush strokes carefully blended to hide the artist's hand in the work.[3] Colour was restrained and often toned down further by the application of a golden varnish.</p>
+                    <p>The Académie had an annual, juried art show, the Salon de Paris, and artists whose work was displayed in the show won prizes, garnered commissions, and enhanced their prestige. The standards of the juries represented the values of the Académie, represented by the works of such artists as Jean-Léon Gérôme and Alexandre Cabanel.</p>
+                    <h4>Impressionist techniques</h4>
+                    <p>French painters who prepared the way for Impressionism include the Romantic colourist Eugène Delacroix, the leader of the realists Gustave Courbet, and painters of the Barbizon school such as Théodore Rousseau. The Impressionists learned much from the work of Johan Barthold Jongkind, Jean-Baptiste-Camille Corot and Eugène Boudin, who painted from nature in a direct and spontaneous style that prefigured Impressionism, and who befriended and advised the younger artists.</p>
+                    <p>A number of identifiable techniques and working habits contributed to the innovative style of the Impressionists. Although these methods had been used by previous artists—and are often conspicuous in the work of artists such as Frans Hals, Diego Velázquez, Peter Paul Rubens, John Constable, and J. M. W. Turner—the Impressionists were the first to use them all together, and with such consistency. These techniques include:</p>
+                    <ul>
+                        <li>Short, thick strokes of paint quickly capture the essence of the subject, rather than its details. The paint is often applied impasto.</li>
+                        <li>Colours are applied side by side with as little mixing as possible, a technique that exploits the principle of simultaneous contrast to make the colour appear more vivid to the viewer.</li>
+                        <li>Greys and dark tones are produced by mixing complementary colours. Pure impressionism avoids the use of black paint.</li>
+                        <li>Wet paint is placed into wet paint without waiting for successive applications to dry, producing softer edges and intermingling of colour.</li>
+                        <li>Impressionist paintings do not exploit the transparency of thin paint films (glazes), which earlier artists manipulated carefully to produce effects. The impressionist painting surface is typically opaque.</li>
+                        <li>The paint is applied to a white or light-coloured ground. Previously, painters often used dark grey or strongly coloured grounds.</li>
+                        <li>The play of natural light is emphasized. Close attention is paid to the reflection of colours from object to object. Painters often worked in the evening to produce effets de soir—the shadowy effects of evening or twilight.</li>
+                        <li>In paintings made en plein air (outdoors), shadows are boldly painted with the blue of the sky as it is reflected onto surfaces, giving a sense of freshness previously not represented in painting. (Blue shadows on snow inspired the technique.)</li>
+                    </ul>
+                    <p>New technology played a role in the development of the style. Impressionists took advantage of the mid-century introduction of premixed paints in tin tubes (resembling modern toothpaste tubes), which allowed artists to work more spontaneously, both outdoors and indoors.[23] Previously, painters made their own paints individually, by grinding and mixing dry pigment powders with linseed oil, which were then stored in animal bladders.</p>
+                    <p>Many vivid synthetic pigments became commercially available to artists for the first time during the 19th century. These included cobalt blue, viridian, cadmium yellow, and synthetic ultramarine blue, all of which were in use by the 1840s, before Impressionism.[25] The Impressionists' manner of painting made bold use of these pigments, and of even newer colours such as cerulean blue,[4] which became commercially available to artists in the 1860s.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="window.location.href = 'impressionism.html';" type="button" class="btn btn-primary">Go to exhibition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cubism</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Cubism</h4>
+                    <p><b>Cubism</b> is an early-20th-century avant-garde art movement that revolutionized European painting and sculpture, and inspired related artistic movements in music, literature, and architecture. In Cubist works of art, the subjects are analysed, broken up, and reassembled in an abstract form—instead of depicting objects from a single perspective, the artist depicts the subject from multiple perspectives to represent the subject in a greater context.[1] Cubism has been considered the most influential art movement of the 20th century.[2][3] The term cubism is broadly associated with a variety of artworks produced in Paris (Montmartre and Montparnasse) or near Paris (Puteaux) during the 1910s and throughout the 1920s.</p>
+                    <p>The movement was pioneered by Pablo Picasso and Georges Braque, and joined by Jean Metzinger, Albert Gleizes, Robert Delaunay, Henri Le Fauconnier, Juan Gris, and Fernand Léger.[4] One primary influence that led to Cubism was the representation of three-dimensional form in the late works of Paul Cézanne.[2] A retrospective of Cézanne's paintings was held at the Salon d'Automne of 1904, current works were displayed at the 1905 and 1906 Salon d'Automne, followed by two commemorative retrospectives after his death in 1907.</p>
+                    <p>In France, offshoots of Cubism developed, including Orphism, abstract art and later Purism.[6][7] The impact of Cubism was far-reaching and wide-ranging. In France and other countries Futurism, Suprematism, Dada, Constructivism, Vorticism, De Stijl and Art Deco developed in response to Cubism.[citation needed] Early Futurist paintings hold in common with Cubism the fusing of the past and the present, the representation of different views of the subject pictured at the same time or successively, also called multiple perspective, simultaneity or multiplicity,[8] while Constructivism was influenced by Picasso's technique of constructing sculpture from separate elements.[9] Other common threads between these disparate movements include the faceting or simplification of geometric forms, and the association of mechanization and modern life.</p>
+                    <h4>History</h4>
+                    <p>Historians have divided the history of Cubism into phases. In one scheme, the first phase of Cubism, known as Analytic Cubism, a phrase coined by Juan Gris a posteriori,[10] was both radical and influential as a short but highly significant art movement between 1910 and 1912 in France. A second phase, Synthetic Cubism, remained vital until around 1919, when the Surrealist movement gained popularity. English art historian Douglas Cooper proposed another scheme, describing three phases of Cubism in his book, The Cubist Epoch. According to Cooper there was "Early Cubism", (from 1906 to 1908) when the movement was initially developed in the studios of Picasso and Braque; the second phase being called "High Cubism", (from 1909 to 1914) during which time Juan Gris emerged as an important exponent (after 1911); and finally Cooper referred to "Late Cubism" (from 1914 to 1921) as the last phase of Cubism as a radical avant-garde movement.[11] Douglas Cooper's restrictive use of these terms to distinguish the work of Braque, Picasso, Gris (from 1911) and Léger (to a lesser extent) implied an intentional value judgement.</p>
+                    <h4>Cubist sculpture</h4>
+                    <p>Just as in painting, Cubist sculpture is rooted in Paul Cézanne's reduction of painted objects into component planes and geometric solids (cubes, spheres, cylinders, and cones). And just as in painting, it became a pervasive influence and contributed fundamentally to Constructivism and Futurism.</p>
+                    <p>Cubist sculpture developed in parallel to Cubist painting. During the autumn of 1909 Picasso sculpted Head of a Woman (Fernande) with positive features depicted by negative space and vice versa. According to Douglas Cooper: "The first true Cubist sculpture was Picasso's impressive Woman's Head, modeled in 1909–10, a counterpart in three dimensions to many similar analytical and faceted heads in his paintings at the time."[11] These positive/negative reversals were ambitiously exploited by Alexander Archipenko in 1912–13, for example in Woman Walking.[12] Joseph Csaky, after Archipenko, was the first sculptor in Paris to join the Cubists, with whom he exhibited from 1911 onwards. They were followed by Raymond Duchamp-Villon and then in 1914 by Jacques Lipchitz, Henri Laurens and Ossip Zadkine.</p>
+                    <p>Indeed, Cubist construction was as influential as any pictorial Cubist innovation. It was the stimulus behind the proto-Constructivist work of both Naum Gabo and Vladimir Tatlin and thus the starting-point for the entire constructive tendency in 20th-century modernist sculpture.</p>
+                    <h4>Architecture</h4>
+                    <p>Cubism formed an important link between early-20th-century art and architecture.[65] The historical, theoretical, and socio-political relationships between avant-garde practices in painting, sculpture and architecture had early ramifications in France, Germany, the Netherlands and Czechoslovakia. Though there are many points of intersection between Cubism and architecture, only a few direct links between them can be drawn. Most often the connections are made by reference to shared formal characteristics: faceting of form, spatial ambiguity, transparency, and multiplicity.</p>
+                    <p>Architectural interest in Cubism centered on the dissolution and reconstitution of three-dimensional form, using simple geometric shapes, juxtaposed without the illusions of classical perspective. Diverse elements could be superimposed, made transparent or penetrate one another, while retaining their spatial relationships. Cubism had become an influential factor in the development of modern architecture from 1912 (La Maison Cubiste, by Raymond Duchamp-Villon and André Mare) onwards, developing in parallel with architects such as Peter Behrens and Walter Gropius, with the simplification of building design, the use of materials appropriate to industrial production, and the increased use of glass.</p>
+                    <p>Cubism was relevant to an architecture seeking a style that needed not refer to the past. Thus, what had become a revolution in both painting and sculpture was applied as part of "a profound reorientation towards a changed world".[66][67] The Cubo-Futurist ideas of Filippo Tommaso Marinetti influenced attitudes in avant-garde architecture. The influential De Stijl movement embraced the aesthetic principles of Neo-plasticism developed by Piet Mondrian under the influence of Cubism in Paris. De Stijl was also linked by Gino Severini to Cubist theory through the writings of Albert Gleizes. However, the linking of basic geometric forms with inherent beauty and ease of industrial application—which had been prefigured by Marcel Duchamp from 1914—was left to the founders of Purism, Amédée Ozenfant and Charles-Édouard Jeanneret (better known as Le Corbusier,) who exhibited paintings together in Paris and published Après le cubisme in 1918.[66] Le Corbusier's ambition had been to translate the properties of his own style of Cubism to architecture. Between 1918 and 1922, Le Corbusier concentrated his efforts on Purist theory and painting. In 1922, Le Corbusier and his cousin Jeanneret opened a studio in Paris at 35 rue de Sèvres. His theoretical studies soon advanced into many different architectural projects.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="window.location.href = 'cubic.html';" type="button" class="btn btn-primary">Go to exhibition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Noel Modal -->
+    <div class="modal fade" id="noel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Merry Christmas</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                  <video controls="controls" class="embed-responsive-item">
+                    <source autoplay src="noel.mp4" type="video/mp4" />
+                  </video>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Realism Modal-->
+    <div class="modal fade" id="realism-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Realism - Virtual Exhibition</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                  <video controls="true" class="embed-responsive-item">
+                    <source src="realism-p/realism.mp4" type="video/mp4" />
+                  </video>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Surrealism Modal-->
+    <div class="modal fade" id="surrealism-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Surrealism - Virtual Exhibition</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                  <video controls="true" class="embed-responsive-item">
+                    <source src="surrealism-p/surrealism.mp4" type="video/mp4" />
+                  </video>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Impressionism Modal-->
+    <div class="modal fade" id="impressionism-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Realism - Virtual Exhibition</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                  <video controls="true" class="embed-responsive-item">
+                    <source src="impressionism-p/impressionism.mp4" type="video/mp4" />
+                  </video>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Cubic Modal-->
+    <div class="modal fade" id="cubic-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Realism - Virtual Exhibition</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                  <video controls="true" class="embed-responsive-item">
+                    <source src="cubic-p/cubic.mp4" type="video/mp4" />
+                  </video>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+        //const letters = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ";
+        //let interval;
+        //document.getElementById("1").onmouseover = (event) => {
+        //    let repetition = 0;
+        //    setInterval(() => {
+        //        event.target.innerText = event.target.innerText
+        //            .split("")
+        //            .map((letter, index) => {
+        //                if (index < repetition) {
+        //                    return event.target.dataset.value[index];
+        //                }
+        //                return letters[Math.floor(Math.random() * 29)];
+        //            })
+        //            .join("");
+
+        //        if (repetition >= event.target.dataset.value.length) {
+        //            clearInterval(interval);
+        //        }
+
+        //        repetition += 1 / 3;
+        //    }, 100);
+        //};
+
+        //document.getElementById("2").onmouseover = (event) => {
+        //    let repetition2 = 0;
+        //    setInterval(() => {
+        //        event.target.innerText = event.target.innerText
+        //            .split("")
+        //            .map((letter, index) => {
+        //                if (index < repetition2) {
+        //                    return event.target.dataset.value[index];
+        //                }
+        //                return letters[Math.floor(Math.random() * 29)];
+        //            })
+        //            .join("");
+
+        //        if (repetition2 >= event.target.dataset.value.length) {
+        //            clearInterval(interval);
+        //        }
+
+        //        repetition2 += 1 / 3;
+        //    }, 100);
+        //};
+
+        //document.getElementById("3").onmouseover = (event) => {
+        //    let repetition3 = 0;
+        //    setInterval(() => {
+        //        event.target.innerText = event.target.innerText
+        //            .split("")
+        //            .map((letter, index) => {
+        //                if (index < repetition3) {
+        //                    return event.target.dataset.value[index];
+        //                }
+        //                return letters[Math.floor(Math.random() * 29)];
+        //            })
+        //            .join("");
+
+        //        if (repetition3 >= event.target.dataset.value.length) {
+        //            clearInterval(interval);
+        //        }
+
+        //        repetition3 += 1 / 3;
+        //    }, 100);
+        //};
+
+        //document.getElementById("4").onmouseover = (event) => {
+        //    let repetition4 = 0;
+        //    setInterval(() => {
+        //        event.target.innerText = event.target.innerText
+        //            .split("")
+        //            .map((letter, index) => {
+        //                if (index < repetition4) {
+        //                    return event.target.dataset.value[index];
+        //                }
+        //                return letters[Math.floor(Math.random() * 29)];
+        //            })
+        //            .join("");
+
+        //        if (repetition4 >= event.target.dataset.value.length) {
+        //            clearInterval(interval);
+        //        }
+
+        //        repetition4 += 1 / 3;
+        //    }, 100);
+        //};
+    </script>
+
+
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+        <script src="app.js"></script>
+
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
+
+
+</body>
+</html>

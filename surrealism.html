@@ -1,0 +1,1160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mission-3</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        h3 {
+            color: white;
+            font-family: monospace;
+            font-size: 40px;
+        }
+
+        .footer {
+            position: relative;
+            width: 100%;
+            background: #3586ff;
+            min-height: 100px;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+            .footer p {
+                color: #fff;
+                margin: 15px 0 10px 0;
+                font-size: 17px;
+                font-weight: 300;
+            }
+
+        .wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("https://i.ibb.co/wQZVxxk/wave.png");
+            background-size: 1000px 100px;
+        }
+
+            .wave#wave1 {
+                z-index: 1000;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWaves 4s linear infinite;
+            }
+
+            .wave#wave2 {
+                z-index: 999;
+                opacity: 0.5;
+                bottom: 10px;
+                animation: animate 4s linear infinite !important;
+            }
+
+            .wave#wave3 {
+                z-index: 1000;
+                opacity: 0.2;
+                bottom: 15px;
+                animation: animateWaves 3s linear infinite;
+            }
+
+            .wave#wave4 {
+                z-index: 999;
+                opacity: 0.7;
+                bottom: 20px;
+                animation: animate 3s linear infinite;
+            }
+
+        @media screen and (min-width:992px) {
+            .nav-item {
+                line-height: 80px;
+            }
+        }
+
+        @keyframes animateWaves {
+            0% {
+                background-position-x: 1000px;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: -1000px;
+            }
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--HEADER-->
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-primary" id="headerNav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="logoo.png" height="80" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">asd</span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-2" href="#"></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link mx-2" href="#">
+                            <img src="logoo.png" height="80" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-2" href="#"></a>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Art Movements
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="realism.html">Realism</a></li>
+                            <li><a class="dropdown-item" href="surrealism.html">Surrealism</a></li>
+                            <li><a class="dropdown-item" href="impressionism.html">Impressionism</a></li>
+                            <li><a class="dropdown-item" href="cubic.html">Cubic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <!--HEADLINE-->
+    <div class="blocks-preview-content-holder shrinker-content">
+        <marquee behavior=alternate><img src="surrealism-p/surrealism-head.png" alt="Alternate Text" height="55px" /></marquee>
+    </div>
+
+    <br />
+
+    <!--CONTENT-->
+    <div class="container text-center">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-2.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal2">
+                        <div class="card-body">
+                            <h5 class="card-title">The Tilled Field</h5>
+                            <p class="card-text">Joan Miró (1924)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-3.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal3">
+                        <div class="card-body">
+                            <h5 class="card-title">Battle of Fishes</h5>
+                            <p class="card-text">André Masson (1926)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-4.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mama, Papa is Wounded</h5>
+                            <p class="card-text">Yves Tanguy (1927)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-5.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal5">
+                        <div class="card-body">
+                            <h5 class="card-title">The Great Masturbator</h5>
+                            <p class="card-text">Salvador Dali (1929)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-6.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal6">
+                        <div class="card-body">
+                            <h5 class="card-title">The Persistence of Memory</h5>
+                            <p class="card-text">Salvador Dali (1931)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-7.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal7">
+                        <div class="card-body">
+                            <h5 class="card-title">Egg in the Church or the Snake</h5>
+                            <p class="card-text">André Breton (1932)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-8.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal8">
+                        <div class="card-body">
+                            <h5 class="card-title">The Barbarians</h5>
+                            <p class="card-text">Max Ernst (1937)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-9.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal9">
+                        <div class="card-body">
+                            <h5 class="card-title">The Treachery of Images</h5>
+                            <p class="card-text">René Magritte (1948)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-10.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal10">
+                        <div class="card-body">
+                            <h5 class="card-title">Ulu's Pants</h5>
+                            <p class="card-text">Leonora Carrington (1952)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-11.jpg" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal11">
+                        <div class="card-body">
+                            <h5 class="card-title">The Son of Man</h5>
+                            <p class="card-text">René Magritte (1964)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-12.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal12">
+                        <div class="card-body">
+                            <h5 class="card-title">Marxism Will Give Health to the Ill</h5>
+                            <p class="card-text">Frida Kahlo (1954)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-13.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal13">
+                        <div class="card-body">
+                            <h5 class="card-title">Fish Magic</h5>
+                            <p class="card-text">Paul Klee (1925)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-14.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal14">
+                        <div class="card-body">
+                            <h5 class="card-title">The Disturbing Muses</h5>
+                            <p class="card-text">Giorgio de Chirico (1955-1960)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-15.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal15">
+                        <div class="card-body">
+                            <h5 class="card-title">Law of the Jungle</h5>
+                            <p class="card-text">Okamoto Taro (1950)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-16.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal16">
+                        <div class="card-body">
+                            <h5 class="card-title">The Menin Road</h5>
+                            <p class="card-text">Paul Nash (1919)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-17.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal17">
+                        <div class="card-body">
+                            <h5 class="card-title">Death of Constable Scanlon</h5>
+                            <p class="card-text">Sidney Nolan (1946)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-18.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal18">
+                        <div class="card-body">
+                            <h5 class="card-title">Kelly and Horse</h5>
+                            <p class="card-text">Sidney Nolan (1946)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-19.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal19">
+                        <div class="card-body">
+                            <h5 class="card-title">Crookhey Hall</h5>
+                            <p class="card-text">Leonora Carrington (1986)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-20.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal20">
+                        <div class="card-body">
+                            <h5 class="card-title">Dos Personajes Atacados Por Perros</h5>
+                            <p class="card-text">Rufino Tamayo (1983)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-21.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal21">
+                        <div class="card-body">
+                            <h5 class="card-title">Lurin's Sea</h5>
+                            <p class="card-text">Fernando de Szyszlo (1990)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-22.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal22">
+                        <div class="card-body">
+                            <h5 class="card-title">Frida and the Cesarean (unfinished)</h5>
+                            <p class="card-text">Frida Kahlo (1931)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-23.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal23">
+                        <div class="card-body">
+                            <h5 class="card-title">Glance of a Landscape</h5>
+                            <p class="card-text">Paul Klee (1926)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-24.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal24">
+                        <div class="card-body">
+                            <h5 class="card-title">Margin of Silence</h5>
+                            <p class="card-text">Kay Sage (1942)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-25.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal25">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Eye Composition</h5>
+                            <p class="card-text">Stanisław Ignacy Witkiewicz (1918)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-26.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal26">
+                        <div class="card-body">
+                            <h5 class="card-title">The trial-Ned Kelly Series</h5>
+                            <p class="card-text">Sidney Nolan (1947)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-27.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal27">
+                        <div class="card-body">
+                            <h5 class="card-title">Toro Cóndor</h5>
+                            <p class="card-text">Alejandro Obregón (1960)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-28.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal28">
+                        <div class="card-body">
+                            <h5 class="card-title">Solitary Orpheus</h5>
+                            <p class="card-text">Giorgio de Chirico (1973)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-29.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal29">
+                        <div class="card-body">
+                            <h5 class="card-title">No title.</h5>
+                            <p class="card-text">Zdzislaw Beksinski (1986)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-30.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal30">
+                        <div class="card-body">
+                            <h5 class="card-title">The Land of Reading</h5>
+                            <p class="card-text">Wolfgang Lettl (1990)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-31.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal31">
+                        <div class="card-body">
+                            <h5 class="card-title">We Inhabit the Corrosive Littoral of Habit</h5>
+                            <p class="card-text">James Gleeson (1940)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-32.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal32">
+                        <div class="card-body">
+                            <h5 class="card-title">No title</h5>
+                            <p class="card-text">Zdzislaw Beksinski (1986)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-33.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal33">
+                        <div class="card-body">
+                            <h5 class="card-title">Pretty Polly Mine</h5>
+                            <p class="card-text">Sidney Nolan (1948)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-34.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal34">
+                        <div class="card-body">
+                            <h5 class="card-title">Tres Cordilleras y dos Océanos</h5>
+                            <p class="card-text">Alejandro Obregón (1985)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-35.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal35">
+                        <div class="card-body">
+                            <h5 class="card-title">Mr. Magritte's Hat</h5>
+                            <p class="card-text">Wolfgang Lettl (1976)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-36.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal36">
+                        <div class="card-body">
+                            <h5 class="card-title">Battle of Germany</h5>
+                            <p class="card-text">Paul Nash (1944)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-37.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal37">
+                        <div class="card-body">
+                            <h5 class="card-title">Flor de Mangle</h5>
+                            <p class="card-text">Alejandro Obregón (1960)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-38.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal38">
+                        <div class="card-body">
+                            <h5 class="card-title">13 Attempts to Become a Rooster - 5</h5>
+                            <p class="card-text">Wolfgang Lettl (1978)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-39.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal39">
+                        <div class="card-body">
+                            <h5 class="card-title">No title.</h5>
+                            <p class="card-text">Zdzislaw Beksinski (1974)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-40.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal40">
+                        <div class="card-body">
+                            <h5 class="card-title">Telón de boca del Teatro Amira de la Rosa</h5>
+                            <p class="card-text">Alejandro Obregón (1982)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="surrealism-p/surrealism-41.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal41">
+                        <div class="card-body">
+                            <h5 class="card-title">Gli Archeologi</h5>
+                            <p class="card-text">Giorgio de Chirico (1927)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <p>&copy;2023 Serkan Bayraktar | All Rights Reserved</p>
+    </footer>
+
+    <!--MODAL-->
+
+    <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">The Tilled Field</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-2.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Battle of Fishes</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-3.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Mama, Papa is Wounded</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-4.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Great Masturbator</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-5.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Persistence of Memory</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-6.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Egg in the Church or the Snake</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-7.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Barbarians</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-8.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Treachery of Images</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-9.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal10" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Ulu's Pants</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-10.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Son of Man</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-11.jpg" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal12" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Marxism Will Give Health to the Ill</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-12.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal13" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Fish Magic</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-13.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal14" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Disturbing Muses</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-14.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal15" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Law of the Jungle</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-15.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal16" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Menin Road</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-16.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal17" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Death of Constable Scanlon</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-17.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal18" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Kelly and Horse</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-18.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal19" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Crookhey Hall</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-19.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal20" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Dos Personajes Atacados Por Perros</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-20.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal21" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Lurin's Sea</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-21.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal22" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lgm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Frida and the Cesarean (unfinished)</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-22.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal23" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Glance of a Landscape</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-23.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal24" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Margin of Silence</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-24.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal25" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Green Eye Composition</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-25.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal26" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The trial-Ned Kelly Series</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-26.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal27" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Toro Cóndor</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-27.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal28" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Solitary Orpheus</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-28.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal29" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">No title.</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-29.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal30" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Land of Reading</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-30.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal31" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">We Inhabit the Corrosive Littoral of Habit</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-31.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal32" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">No title</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-32.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal33" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Pretty Polly Mine</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-33.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal34" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Tres Cordilleras y dos Océanos</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-34.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal35" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Mr. Magritte's Hat</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-35.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal36" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Battle of Germany</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-36.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal37" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Flor de Mangle</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-37.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal38" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">13 Attempts to Become a Rooster - 5</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-38.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal39" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">No title.</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-39.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal40" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Telón de boca del Teatro Amira de la Rosa</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-40.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal41" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Gli Archeologi</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="surrealism-p/surrealism-41.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

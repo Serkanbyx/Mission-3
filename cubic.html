@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mission-3</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        h3 {
+            color: white;
+            font-family: monospace;
+            font-size: 40px;
+        }
+
+        .footer {
+            position: relative;
+            width: 100%;
+            background: #3586ff;
+            min-height: 100px;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+            .footer p {
+                color: #fff;
+                margin: 15px 0 10px 0;
+                font-size: 17px;
+                font-weight: 300;
+            }
+
+        .wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("https://i.ibb.co/wQZVxxk/wave.png");
+            background-size: 1000px 100px;
+        }
+
+            .wave#wave1 {
+                z-index: 1000;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWaves 4s linear infinite;
+            }
+
+            .wave#wave2 {
+                z-index: 999;
+                opacity: 0.5;
+                bottom: 10px;
+                animation: animate 4s linear infinite !important;
+            }
+
+            .wave#wave3 {
+                z-index: 1000;
+                opacity: 0.2;
+                bottom: 15px;
+                animation: animateWaves 3s linear infinite;
+            }
+
+            .wave#wave4 {
+                z-index: 999;
+                opacity: 0.7;
+                bottom: 20px;
+                animation: animate 3s linear infinite;
+            }
+
+        @media screen and (min-width:992px) {
+            .nav-item {
+                line-height: 80px;
+            }
+        }
+
+        @keyframes animateWaves {
+            0% {
+                background-position-x: 1000px;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: -1000px;
+            }
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--HEADER-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-primary" id="headerNav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="logoo.png" height="80" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">asd</span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-2" href="#"></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link mx-2" href="#">
+                            <img src="logoo.png" height="80" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-2" href="#"></a>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Art Movements
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="realism.html">Realism</a></li>
+                            <li><a class="dropdown-item" href="surrealism.html">Surrealism</a></li>
+                            <li><a class="dropdown-item" href="impressionism.html">Impressionism</a></li>
+                            <li><a class="dropdown-item" href="cubic.html">Cubic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <!--HEADLINE-->
+    <div class="blocks-preview-content-holder shrinker-content">
+        <marquee behavior=alternate><img src="cubic-p/cubic-head.png" alt="Alternate Text" height="55px" /></marquee>
+    </div>
+
+    <br />
+
+    <!--CONTENT-->
+    <div class="container text-center">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-2.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal2">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapata-style Landscape</h5>
+                            <p class="card-text">Diego Rivera (1915)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-3.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal3">
+                        <div class="card-body">
+                            <h5 class="card-title">The Musician's Table</h5>
+                            <p class="card-text">Juan Gris (1926)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-4.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal4">
+                        <div class="card-body">
+                            <h5 class="card-title">Dog Lying in the Snow</h5>
+                            <p class="card-text">Franz Marc (1911)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-5.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal5">
+                        <div class="card-body">
+                            <h5 class="card-title">Dinámica del viento</h5>
+                            <p class="card-text">Emilio Pettoruti (1915)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-6.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal6">
+                        <div class="card-body">
+                            <h5 class="card-title">The Soul of the Soullness City</h5>
+                            <p class="card-text">Christopher Nevinson (1920)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-7.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal7">
+                        <div class="card-body">
+                            <h5 class="card-title">The Mud Bath</h5>
+                            <p class="card-text">David Bomberg (1914)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-8.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal8">
+                        <div class="card-body">
+                            <h5 class="card-title">Seated Woman</h5>
+                            <p class="card-text">Juan Gris (1917)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-9.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal9">
+                        <div class="card-body">
+                            <h5 class="card-title">Bust of a Man (The Athlete)</h5>
+                            <p class="card-text">Pablo Picasso (1909)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-10.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal10">
+                        <div class="card-body">
+                            <h5 class="card-title">Girl with a Cross</h5>
+                            <p class="card-text">Georges Braque (1911)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-11.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal11">
+                        <div class="card-body">
+                            <h5 class="card-title">Portrait of Josette Gris</h5>
+                            <p class="card-text">Juan Gris (1916)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-12.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal12">
+                        <div class="card-body">
+                            <h5 class="card-title">Jumping Horse</h5>
+                            <p class="card-text">Franz Marc (1912)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-13.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal13">
+                        <div class="card-body">
+                            <h5 class="card-title">Man Entering the Room</h5>
+                            <p class="card-text">Niklāvs Strunke (1927)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-14.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal14">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitar and Newspaper</h5>
+                            <p class="card-text">Juan Gris (1925)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-15.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal15">
+                        <div class="card-body">
+                            <h5 class="card-title">Guyasdoms D'Sonoqua</h5>
+                            <p class="card-text">Emily Carr (1930)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-16.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal16">
+                        <div class="card-body">
+                            <h5 class="card-title">Contrast of Forms</h5>
+                            <p class="card-text">Fernand Léger (1913)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-17.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal17">
+                        <div class="card-body">
+                            <h5 class="card-title">Mont Sainte-Victoire and Château Noir</h5>
+                            <p class="card-text">Paul Cézanne (1906)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-18.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal18">
+                        <div class="card-body">
+                            <h5 class="card-title">The Arrival</h5>
+                            <p class="card-text">Christopher Nevinson (1913)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-19.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal19">
+                        <div class="card-body">
+                            <h5 class="card-title">The Bottle of Anís del Mono</h5>
+                            <p class="card-text">Juan Gris (1914)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-20.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal20">
+                        <div class="card-body">
+                            <h5 class="card-title">Watermelon Seller</h5>
+                            <p class="card-text">Hafidh al-Droubi (1914)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-21.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal21">
+                        <div class="card-body">
+                            <h5 class="card-title">The Bewitched Mill</h5>
+                            <p class="card-text">Franz Marc (1913)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-22.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal22">
+                        <div class="card-body">
+                            <h5 class="card-title">Mont Sainte-Victoire</h5>
+                            <p class="card-text">Paul Cézanne (1906)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-23.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal23">
+                        <div class="card-body">
+                            <h5 class="card-title">1932 (Bocque)</h5>
+                            <p class="card-text">Ben Nicholson (1932)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-24.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal24">
+                        <div class="card-body">
+                            <h5 class="card-title">The Garden at Les Lauves</h5>
+                            <p class="card-text">Paul Cézanne (1906)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-25.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal25">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitar on a table</h5>
+                            <p class="card-text">Juan Gris (1915)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-26.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal26">
+                        <div class="card-body">
+                            <h5 class="card-title">Deer in the Forest I</h5>
+                            <p class="card-text">JFranz Marc (1913)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-27.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal27">
+                        <div class="card-body">
+                            <h5 class="card-title">Der Dom in Halle</h5>
+                            <p class="card-text">Lyonel Feininger (1931)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-28.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal28">
+                        <div class="card-body">
+                            <h5 class="card-title">Genii Loci II</h5>
+                            <p class="card-text">Nikos Hacikiriakos-Gikas (1970)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-29.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal29">
+                        <div class="card-body">
+                            <h5 class="card-title">Kispiax Village</h5>
+                            <p class="card-text">Emily Carr (1929)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-30.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal30">
+                        <div class="card-body">
+                            <h5 class="card-title">Four Girls</h5>
+                            <p class="card-text">August Macke (1913)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-31.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal31">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitar with inlays</h5>
+                            <p class="card-text">Juan Gris (1925)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-32.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal32">
+                        <div class="card-body">
+                            <h5 class="card-title">Tropical Garden</h5>
+                            <p class="card-text">Paul Klee (1919)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-33.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal33">
+                        <div class="card-body">
+                            <h5 class="card-title">Figure with dagger. Sketch for costume for production of Shakespeare’s Romeo and Juliet.</h5>
+                            <p class="card-text">Aleksandra Ekster (1921)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-34.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal34">
+                        <div class="card-body">
+                            <h5 class="card-title">Landscape</h5>
+                            <p class="card-text">Diego Rivera (1911)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-35.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal35">
+                        <div class="card-body">
+                            <h5 class="card-title">London Roofs Ι</h5>
+                            <p class="card-text">Nikos Hacikiriakos-Gikas (1945)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-36.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal36">
+                        <div class="card-body">
+                            <h5 class="card-title">Gallic Cock</h5>
+                            <p class="card-text">Marcel Duchamp, Raymond Duchamp-Villon (1916)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-37.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal37">
+                        <div class="card-body">
+                            <h5 class="card-title">The Alarm Clock</h5>
+                            <p class="card-text">Diego Rivera (1914)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-38.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal38">
+                        <div class="card-body">
+                            <h5 class="card-title">Landscape with a Train</h5>
+                            <p class="card-text">Natalya Sergeyevna Goncharova (1913)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-39.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal39">
+                        <div class="card-body">
+                            <h5 class="card-title">The Open Window</h5>
+                            <p class="card-text">Juan Gris (1921)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-40.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal40">
+                        <div class="card-body">
+                            <h5 class="card-title">The Bridge</h5>
+                            <p class="card-text">Dorrit Black (1930)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="card">
+                        <img src="cubic-p/cubic-41.png" class="card-img-top img-fluid" style="cursor: pointer" alt="Responsive Image" id="myImage" data-toggle="modal" data-target="#modal41">
+                        <div class="card-body">
+                            <h5 class="card-title">The first morning of the world, stage design for the dance-drama "Persephone"</h5>
+                            <p class="card-text">Nikos Hacikiriakos-Gikas (1961)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <p>&copy;2023 Serkan Bayraktar | All Rights Reserved</p>
+    </footer>
+
+    <!--MODAL-->
+
+    <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Zapata-style Landscape</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-2.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Musician's Table</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-3.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Dog Lying in the Snow</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-4.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Dinámica del viento</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-5.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Soul of the Soullness City</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-6.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Mud Bath</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-7.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Seated Woman</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-8.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Bust of a Man (The Athlete)</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-9.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal10" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Girl with a Cross</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-10.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Portrait of Josette Gris</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-11.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal12" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Jumping Horse</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-12.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal13" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Man Entering the Room</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-13.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal14" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Guitar and Newspaper</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-14.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal15" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Guyasdoms D'Sonoqua</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-15.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal16" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Contrast of Forms</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-16.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal17" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Mont Sainte-Victoire and Château Noir</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-17.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal18" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Arrival</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-18.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal19" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Bottle of Anís del Mono</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-19.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal20" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Watermelon Seller</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-20.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal21" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Bewitched Mill</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-21.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal22" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Mont Sainte-Victoire</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-22.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal23" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">1932 (Bocque)</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-23.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal24" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Garden at Les Lauves</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-24.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal25" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Guitar on a table</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-25.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal26" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Deer in the Forest I</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-26.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal27" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Der Dom in Halle</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-27.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal28" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Genii Loci II</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-28.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal29" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Kispiax Village</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-29.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal30" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Four Girls</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-30.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal31" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Guitar with inlays</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-31.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal32" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Tropical Garden</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-32.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal33" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Figure with dagger. Sketch for costume for production of Shakespeare’s Romeo and Juliet.</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-33.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal34" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Landscape</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-34.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal35" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">London Roofs Ι</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-35.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal36" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Gallic Cock</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-36.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal37" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Alarm Clock</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-37.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal38" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Landscape with a Train</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-38.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal39" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Open Window</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-39.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal40" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The Bridge</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-40.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal41" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">The first morning of the world, stage design for the dance-drama "Persephone"</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="cubic-p/cubic-41.png" class="img-fluid" alt="Responsive Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
